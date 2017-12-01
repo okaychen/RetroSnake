@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,18 +7,55 @@
     <link rel="stylesheet" href="main.css">
     <title>Retro Snaker</title>
 </head>
+
 <body>
     <header class="wrap">
         <h1>Snake</h1>
-        <p class="score">Score：<span id="score_value">0</span></p>
+        <p class="score">Score：
+            <span id="score_value">0</span>
+        </p>
     </header>
     <canvas class="wrap" id="snake" width="320" height="320" tabindex="1"></canvas>
     <!-- Game Over Screen -->
-    <div id="gameover">
+    <div id="gameOver">
         <h2>Game Over</h2>
-        <p>press <span>space</span></p>
+        <p>press
+            <span class="again">space</span>
+            begin a
+            <a id="newGame">new Game</a>
+            <a id="gameOver_settings">settings</a>
+        </p>
     </div>
+
+    <!-- Setting Screen -->
+    <div id="settings">
+        <h2>Snake Settings</h2>
+        <a id="newgame_setting">new game</a>
+        <p>Speed：
+            <input id="speed1" type="radio" name="speed" value="120" checked>
+            <label for="speed1">Slow</label>
+            <input id="speed2" type="radio" name="speed" value="70">
+            <label for="speed2">Normal</label>
+            <input id="speed3" type="radio" name="speed" value="35">
+            <label for="speed3">Fast</label>
+        </p>
+        <p>Wall：
+            <input id="wallon" type="radio" name="wall" value="1" checked >
+            <label for="vallon">on</label>
+            <input id="walloff" type="radio" name="wall" value="0">
+            <label for="walloff">off</label>
+        </p>
+    </div>
+
+    <!-- Main Menu Screen -->
+    <div id="menu">
+        <h2>Retro Snaker</h2>
+        <a id="newgame_menu">new game</a>
+        <a id="setting_menu">settings</a>
+    </div>
+
     <!-- <script src="https://cdn.bootcss.com/jquery/2.1.2/jquery.min.js"></script> -->
-    <script src='granule.js' type="text/javascript"></script>
+    <script src='snake.js' type="text/javascript"></script>
 </body>
+
 </html>

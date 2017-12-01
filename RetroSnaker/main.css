@@ -1,28 +1,175 @@
-body,html{
+body,
+html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     background-color: #111;
+    line-height: 50px;
+    font-family: Comic sans MS, Cambria, Cochin, Georgia, Times, Times New Roman, serif
 }
-header{
+
+canvas {
+    display: none;
+}
+
+header {
     width: 340px;
     font-size: 0px;
 }
-h1{
+
+h1 {
     display: inline-block;
     width: 100px;
     font-size: 32px;
     color: #ccc;
 }
+
 .wrap {
     margin-left: auto;
     margin-right: auto;
 }
-.score{
+
+.score {
     display: inline-block;
     width: 240px;
-    font-size: 20px;
+    font-size: 25px;
     color: #ccc;
     text-align: right;
+}
+
+#gameOver {
+    /* 游戏结束，暂时隐藏 */
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin: 100px 0;
+}
+
+h2 {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#newGame,
+#gameOver_settings {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+#newGame:hover,
+#gameOver_settings:hover,
+.again:hover {
+    color: #eee;
+}
+
+.again {
+    font-size: 35px;
+}
+
+
+/* menu */
+
+#menu {
+    display: block;
+    width: 340px;
+    padding: 95px 0px;
+    margin: 0 auto;
+    text-align: center;
+    color: #eee;
+    line-height: 100px;
+}
+
+@keyframes logo-colorChange {
+    20% {
+        color: yellow;
+    }
+    40% {
+        color: coral;
+    }
+    60% {
+        color: pink;
+    }
+    80% {
+        color: cyan;
+    }
+}
+
+#menu h2 {
+    animation: logo-colorChange 500ms infinite linear;
+    display: block;
+    font-size: 35px;
+}
+
+#menu #newgame_menu,
+#menu #setting_menu {
+    display: block;
+    font-size: 30px;
+    cursor: pointer
+}
+
+
+/* settings */
+
+#settings {
+    /* 设置首先隐藏 */
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 85px 0px;
+    font-size: 30px;
+    color: #eee;
+    text-align: center;
+    line-height: 80px;
+}
+
+@keyframes logo-ani {
+    50% {
+        -webkit-transform: scale(1.3, 1.3)
+    }
+    100% {
+        -webkit-transform: scale(1.0, 1.0)
+    }
+}
+
+@-webkit-keyframes logo-ani {
+    50% {
+        -webkit-transform: scale(1.3, 1.3)
+    }
+    100% {
+        -webkit-transform: scale(1.5, 1.5)
+    }
+}
+
+#settings h2 {
+    -webkit-animation: logo-ani 1000ms linear infinite;
+    animation: logo-ani 1000ms linear infinite;
+    margin-bottom: 100px;
+    display: block;
+    font-size: 50px;
+}
+
+#newgame_setting {
+    display: block;
+    margin: 50px 0;
+    font-size: 35px;
+}
+
+#settings input {
+    display: none;
+}
+
+#settings label {
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+#settings input:checked+label {
+    background: #000;
+    color: yellow;
+    padding: 10px;
+    border-radius: 10px;
 }
