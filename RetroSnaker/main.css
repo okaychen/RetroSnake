@@ -7,11 +7,20 @@ html {
     overflow: hidden;
     background-color: #111;
     line-height: 50px;
+    text-align: center;
     font-family: Comic sans MS, Cambria, Cochin, Georgia, Times, Times New Roman, serif
 }
 
 canvas {
     display: none;
+    border-style:solid;
+	border-width:6px;
+    border-color:#FFFFFF;
+    margin: 100px 0;
+}
+
+canvas:focus {
+    outline: none
 }
 
 header {
@@ -53,15 +62,15 @@ h2 {
     margin: 0 auto;
 }
 
-#newGame,
-#gameOver_settings {
+#newgame_gameOver,
+#setting_gameOver {
     font-size: 30px;
     cursor: pointer;
     display: block;
 }
 
-#newGame:hover,
-#gameOver_settings:hover,
+#newgame_gameOver:hover,
+#setting_gameOver:hover,
 .again:hover {
     color: #eee;
 }
@@ -74,7 +83,7 @@ h2 {
 /* menu */
 
 #menu {
-    display: block;
+    display: block  ;
     width: 340px;
     padding: 95px 0px;
     margin: 0 auto;

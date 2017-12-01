@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,22 +16,22 @@
             <span id="score_value">0</span>
         </p>
     </header>
-    <canvas class="wrap" id="snake" width="320" height="320" tabindex="1"></canvas>
+    <canvas class="wrap" id="snake" width="350" height="350" tabindex="1"></canvas>
     <!-- Game Over Screen -->
     <div id="gameOver">
         <h2>Game Over</h2>
         <p>press
             <span class="again">space</span>
             begin a
-            <a id="newGame">new Game</a>
-            <a id="gameOver_settings">settings</a>
+            <a id="newgame_gameOver">new Game</a>
+            <a id="setting_gameOver">settings</a>
         </p>
     </div>
 
     <!-- Setting Screen -->
     <div id="settings">
         <h2>Snake Settings</h2>
-        <a id="newgame_setting">new game</a>
+        <a id="z">new game</a>
         <p>Speed：
             <input id="speed1" type="radio" name="speed" value="120" checked>
             <label for="speed1">Slow</label>
@@ -54,7 +55,7 @@
         <a id="setting_menu">settings</a>
     </div>
 
-    <script src='snake.js' type="text/javascript"></script>
+    <script src="snake.js" type="text/javascript"></script>
 </body>
 
 </html>
