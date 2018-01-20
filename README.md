@@ -40,8 +40,10 @@ I think the focus is on the idea of the program， I do not compress，you can s
 
 # About settings
 
-<img align="center" src="images/main.png" height="420px" width="300px">
-<img align="center" src="images/settings.png" height="420px" width="300px">
+<p align="center">
+  <img src="images/main.png" height="420px" width="300px">
+  <img src="images/settings.png" height="420px" width="300px">
+</p>
 
 main Function：
 
