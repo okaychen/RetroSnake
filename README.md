@@ -40,7 +40,7 @@ I think the focus is on the idea of the program， I do not compress，you can s
 
 # About settings
 
-<p align="center">
+<p align="">
   <img src="images/main.png" height="420px" width="300px">
   <img src="images/settings.png" height="420px" width="300px">
 </p>
