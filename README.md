@@ -2,8 +2,10 @@
 
 <p align="center">pure navtive JavaScript combined with canvas，no dependence</p>
 
-[![GitHub top language](https://img.shields.io/github/languages/top/badges/shields.svg?style=plastic)]()
-[![Gemnasium](https://img.shields.io/gemnasium/mathiasbynens/he.svg?style=plastic)]()
+<p align="center">
+<img src="https://img.shields.io/github/languages/top/badges/shields.svg?style=plastic">
+<img src="https://img.shields.io/gemnasium/mathiasbynens/he.svg?style=plastic">
+</p>
 
 The results are shown as follows：
 # Show
