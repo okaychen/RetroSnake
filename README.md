@@ -47,7 +47,7 @@ I think the focus is on the idea of the program， I do not compress，you can s
   <img src="images/settings.png" height="420px" width="300px">
 </p>
 
-main Function：
+Main Function：
 
 1. you can choose wall as an obstacle 「on」or「off」
 
