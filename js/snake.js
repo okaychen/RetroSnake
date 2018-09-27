@@ -1,6 +1,6 @@
 /**
 * snake.js
-* @author okaychen -=彡 大山深处修炼的小龙虾
+* @author okaychen
 * @description  
 * @created Fri Dec 01 2017 11:24:41 GMT+0800 (中国标准时间)
 * @copyright None 
